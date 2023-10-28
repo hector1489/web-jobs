@@ -1,6 +1,6 @@
 {
     "name": "web-jobs",
-    "version": "0.0.1",
+    "version": "0.1.1",
     "description": "proyecto backend web Jobs",
     "main": "app.js",
     "scripts": {

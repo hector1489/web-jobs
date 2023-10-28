@@ -1,6 +1,6 @@
 const db = require('../database/db')
 
-const verifyCredentials = async (email, password) => await db('SELECT * FROM usuarios WHERE email = $1 AND password = $2;', [email, password])
+const verifyCredentials = async (email, pass) => await db('SELECT * FROM users WHERE email = $1 AND pass = $2;', [email, pass])
 
 module.exports = {
     verifyCredentials

@@ -19,7 +19,7 @@ app.use(cors())
 app.use(express.json())
 
 app.post('/login', (req, res) => {
-    verifyCredentials(req.body.email, req.body.password)
+    verifyCredentials(req.body.email, req.body.pass)
         .then((user) => {
             user.length > 0
                 ? res.status(200).json({ token: jwtSign({ email: req.body.email }) })

@@ -1,7 +1,7 @@
-CREATE DATABASE jobsWeb;
-\c jobsWeb;
+CREATE DATABASE jobsapi;
+\c jobsapi;
 
-CREATE TABLE usuarios (
+CREATE TABLE users (
     id              SERIAL,
     email           VARCHAR(50) NOT NULL    UNIQUE,
     pass            VARCHAR(60) NOT NULL,
